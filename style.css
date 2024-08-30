@@ -1,0 +1,603 @@
+/* Base styles */
+body {
+  background-color: #E0E0E0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Navigation Bar */
+
+.translate-button {
+  position: fixed; /* Fixes the position relative to the viewport */
+  bottom: 20px; /* Distance from the bottom of the viewport */
+  right: 20px; /* Distance from the right side of the viewport */
+  z-index: 1000; /* Ensures it appears above other elements */
+  background-color: #007bff; /* Background color */
+  color: white; /* Text color */
+  padding: 5px 8px; /* Padding inside the button */
+  padding-top: 9px;
+  border: none; /* Removes default border */
+  border-radius: 5px; /* Rounds the corners */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+.translate-button:hover {
+  background-color: #0056b3; /* Darker background on hover */
+  transition: 0.1s;
+
+}
+
+.translate-button img{
+  width: 20px;
+  height: 15px;
+}
+
+.translate-button:hover img {
+  width: 30px; /* New width on hover */
+  height: 20px; /* New height on hover */
+  transition: 0.5s;
+}
+
+#home {
+  background-color: #37b5d5;
+  padding-bottom: 1cm;
+  margin-left:-1cm;
+  margin-right:-1cm;
+  margin-top:-1cm;
+  padding-top: 2cm;
+  padding-bottom: 2cm;
+  height: 5mm;
+ }
+
+.topmenu {
+  color: #8BDFEC;
+  margin: 10px;
+  padding: 20px;
+  font-size: 18px;
+  text-decoration:none;
+}
+
+.topmenu:hover {
+  color: white;;
+  font-size: bold;
+  border-bottom: 2px solid white;
+  box-shadow: 0 4px 4px -2px lightblue;
+  /* Add the styles here */
+}
+
+.topdiv {
+  float: right;
+  padding-right: 1cm;
+}
+
+.profile_name .profile-h1-name {
+  padding-bottom: 10px; /* Adds space below the text */
+  margin-bottom: 10px; /* Adds space below the element */
+  position: relative; /* Allows the use of top property */
+  top: -10px; /* Moves the text up by 10 pixels */
+}
+
+
+.profile_name {
+  float: left;
+  padding-left: 2cm;
+  color: rgba(255, 255, 255, 0.925);
+  font-size: 30px;
+  /* Add the styles here */
+}
+
+.profile_name .contact_info {
+  font-size: 15px;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.contact_info img {
+  width:25px;
+  margin-right: 10px;
+  float:left;
+}
+
+/* Titles */
+
+h2 {
+  text-align: justify;
+  font-size: 50px;
+  text-align: center;
+  float: left;
+  color: #37b5d5;
+  margin: 30px;
+  margin-left: 60px;
+  margin-top: 40px;
+  margin-bottom: 0px;
+}
+
+.introduction {
+  text-align: justify;
+  font-size: 30px;
+  text-align: center;
+  float: left;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  animation-duration: 5s;
+  position: relative;
+}
+
+/* Used in the About Me sections */
+
+.container {
+  display: flex;
+}
+
+/* About Me */
+
+.about-me {
+  display: flex;
+  align-items: center;
+}
+
+#about-me h1 {
+  font-size: 65px;
+  margin-top: 90px;
+  color: #37b5d5;
+}
+
+#about-me p {
+  font-size: 25px;
+  color: rgb(128, 128, 128);
+  margin-top: -1cm;
+}
+
+.profile_image {
+  width: 300px;
+  border: 5px solid darkgray;
+  border-radius: 50%;
+  height: fit-content;
+  vertical-align: middle;
+  margin: 50px;
+  box-shadow: 2 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.profile_image:hover{
+  animation-name: boxshadow-animation;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes boxshadow-animation {
+  0% {
+    box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.4);
+  }
+  100% {
+    box-shadow: 2px 4px 10px 25px rgba(255, 255, 255, 0);
+
+  }
+}
+
+.all_skills {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+}
+
+.skill {
+  border: 2px solid gray;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  margin: 50px;
+  padding: 10px;
+  width: 2in;
+  font-size: 20px;
+}
+
+.skill img {
+  height: 35px;
+  align-items: center;
+}
+
+.skills h6 {
+  align-items: center;
+  font-size: 20px;
+  margin-block-start: 8px;
+  margin-block-end: 5px;
+  font-weight: bold;
+} 
+
+.skills p {
+  align-items: center;
+  font-size: 15px;
+  color: gray;
+  margin-block-start: 5px;
+  margin-block-end: 5px;
+} 
+
+.flex_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Projects */
+
+.projects-container {
+  margin-top: 30px;
+  margin-left: 60px;
+}
+
+.projects-container hr {
+  border: 1px solid lightgray;
+  width: 75%;
+  margin-left: 5cm;
+}
+
+.project-card {
+  margin: 0 15px 15px 30px;
+  padding-bottom: 5px;
+}
+
+.project-card h3 {
+  font-size: 25px;
+  margin-left: 30px;
+}
+
+.project-card li {
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+/* Recommendations */
+
+.all_recommendations {
+  display: flex;
+  align-items: center;
+  margin-left: 1in;
+  flex-direction: row;
+  flex-flow: wrap;
+  padding: 20px;
+}
+
+.recommendation {
+  font-style: italic;
+  text-align: left;
+  width: 21.875rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  padding: 20px;
+  margin: 10px;
+  border:1px solid gray;
+  font-size: 18px;
+  height:150px
+}
+
+.recommendation span {
+  color: #37b5d5;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Scroll to Top Button */
+
+.iconbutton{
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  background-color: #37b5d5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 3%;
+  bottom: 3%;
+  cursor: pointer;
+}
+
+/* Form Pop-up */
+
+.popup {
+  width:400px;
+  background-color: #e8bcf0;
+  border-radius: 3mm;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  position: fixed;
+  /* padding: 30px; */
+  visibility: hidden;
+}
+
+.popup img {
+  padding-top: 20px;
+}
+
+.popup button {
+  background-color: #fff;
+  border: 1px solid #37b5d5;
+  color: #37b5d5;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  margin: 50px;
+  padding: 10px;
+  width: 2in;
+  font-size: 20px;
+  margin-left: 25%;
+}
+
+.popup button:hover {
+  background-color: #fff;
+  border: 2px solid #37b5d5;
+  color: #37b5d5;
+  display: block;
+  font-weight: bolder;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 25%;
+}
+
+/* Recommendation Form */
+
+input, textarea {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  margin: 10px;  
+  width:100%;
+}
+
+fieldset {
+  display: flexbox;
+  align-content: center;
+  justify-content: center;  
+  padding: 25px; 
+  margin-left: 50px; 
+  margin-right: 50px;   
+  border: thin solid white;
+  width: 50%;
+}
+
+/* Buttons */
+
+button {
+  background-color: #fff;
+  border: 1px solid #37b5d5;
+  color: #37b5d5;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  margin: 50px;
+  padding: 10px;
+  width: 2in;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: #37b5d5;
+  border: 1px solid #37b5d5;
+  color: #fff;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.cert-logo {
+  width: 100px;
+  height: auto;
+  margin: 10px;
+  object-fit: contain;
+  flex-grow: 1;
+}
+
+.certificate-card {
+  display: flex;
+  align-items: center;
+}
+
+.cert-description{
+  margin: 10px;
+  width: 30em;
+  margin-left: 50px;
+  flex-grow: 2;
+}
+
+.btn {
+  color: #37b5d5;
+  text-decoration: none;
+  font-weight: bold;
+  padding-left: 50px;
+}
+
+.btn:hover {
+  color: #094080;
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  padding-top: 10px
+}
+
+
+.job-h3{
+  margin-bottom: 6px
+}
+
+.jobdesc{
+  padding-left: 30px;
+}
+
+.gitbtn {
+  color: #37b5d5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.gitbtn:hover {
+  color: #094080;
+}
+
+.nostyle{
+  list-style: none;
+  padding-bottom: 5px;
+
+}
+
+.projdesc{
+  padding-left: 30px;
+  font-size: 20px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  #home {
+    padding: 2cm;
+    margin: 0;
+    height: auto;
+  }
+
+
+  .topdiv{
+    border-top: 1px solid lightgray;
+    margin-top: 8px;
+  }
+  .topmenu {
+    font-size: 15px;
+    padding: 5px;
+  }
+
+  .profile_name {
+    font-size: 25px;
+    padding-left: 0px;
+    margin-top: -50px
+  }
+
+  h2 {
+    font-size: 40px;
+    margin: 20px;
+  }
+
+  .introduction {
+    font-size: 25px;
+    margin: 20px;
+  }
+
+  .profile_image {
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+
+  .skill {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .projects-container{
+    margin: 0;
+  }
+
+  .project-card {
+    margin: 15px 0;
+  }
+
+  .recommendation {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .iconbutton {
+    width: 40px;
+    height: 40px;
+  }
+
+  .popup {
+    width: 90%;
+    padding: 20px;
+  }
+
+  button {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  #home {
+    padding: 2cm;
+    margin: 0;
+    height: auto;
+  }
+  
+  #about-me h1.greetings{
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+
+  .topdiv{
+    padding-right: 0px;
+    margin-right: 0px;
+  }
+
+  .topmenu {
+    font-size: 10px;
+    padding: 0px;
+  }
+
+  .profile_name {
+    font-size: 20px;
+    padding-left: 1cm;
+  }
+
+  h2 {
+    font-size: 30px;
+    margin: 10px;
+  }
+
+  .introduction {
+    font-size: 20px;
+    margin: 10px;
+  }
+
+  .profile_image {
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+
+  .skill {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .project-card {
+    margin: 10px 0;
+  }
+
+  .recommendation {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .iconbutton {
+    width: 35px;
+    height: 35px;
+  }
+
+  .popup {
+    width: 90%;
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
